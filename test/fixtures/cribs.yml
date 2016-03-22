@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  no_of_tenants: 1
+  owner_id: 
+  status: MyString
+
+two:
+  location: MyString
+  no_of_tenants: 1
+  owner_id: 
+  status: MyString
