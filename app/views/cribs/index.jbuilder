@@ -6,7 +6,8 @@ json.data do
 		  	json.number_of_tenants crib.no_of_tenants
 
 	    end
-	    json.rels  do 
+	    json.rels  do
+	        json.self_link crib_url(crib) 
 	    	json.tenants crib.tenants do |tenant|
 	 		json.id tenant.id
 	 		json.name tenant.first_name
@@ -15,7 +16,7 @@ json.data do
 	 		json.owner do
 	 			json.name	crib.owner.firstname
 	 		end
-			json.self_link crib_url(crib)	
+				
 	 	end 
 	 
 	end
